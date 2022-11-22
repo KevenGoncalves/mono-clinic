@@ -1,0 +1,22 @@
+{
+	"name": "mono-clinica",
+	"version": "1.0.0",
+	"description": "System to manage clinics",
+	"scripts": {
+		"dev": "pnpm --stream -r start:dev",
+		"dev:frontend": "pnpm --filter frontend start:dev",
+		"dev:backend": "pnpm --filter backend start:dev",
+		"build": "pnpm --stream -r build",
+		"start": "pnpm --stream -r start",
+		"lint": "pnpm --stream -r lint"
+	},
+	"workspaces": [
+		"backend",
+		"frontend"
+	],
+	"keywords": [
+		"clinic-system"
+	],
+	"author": "Keven Gonçalves",
+	"license": "ISC"
+}
